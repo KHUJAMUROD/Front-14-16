@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="block-1">
+            <div class="p-el item-1"></div>
+        </div>
+        <div class="block-2 ">
+            <div class="item-2 p-el"></div>
+        </div>
+        <div class="block-3 ">
+            <div class="item-3 p-el"></div>
+        </div>
+    </main>
+
+</body>
+
+
+<style>
+    main {
+        background-color: gray;
+        border: 2px solid blue;
+        width: 60%;
+        height: 60vh;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .p-el{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .block-1 {
+        width: 50px;
+        height: 50%;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        background-color: red;
+    }
+
+    .block-2 {
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        background-color: black;
+        width: 50%;
+    }
+
+    .block-3 {
+        width: 50px;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        background-color: blue;
+        height: 50%;
+    }
+
+    .item-1{
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+    }
+   
+    .item-2 {
+        position: absolute;
+        background-color: yellow;
+        left: 42%;
+    }
+
+    .item-3 {
+        background-color: red;
+        top: 0;
+    }
+    
+</style>
+
+</html>

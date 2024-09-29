@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main main1">
+        <!-- lorem 100 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sunt aperiam quod dolorem accusamus. Deserunt
+            consequuntur maxime provident sint esse est culpa, at temporibus optio dolore rerum cumque sed distinctio
+            nam aliquid officia quae praesentium, cupiditate odit alias, aliquam delectus eveniet qui minus? Architecto,
+            magni magnam accusantium possimus maxime nisi laboriosam, quo repellendus consequuntur et aspernatur
+            perferendis quis qui quos quia laudantium, tempore nobis? Ipsa voluptas unde illum optio quisquam esse
+            inventore suscipit? Eligendi odio quisquam provident doloremque veniam voluptatibus, neque possimus adipisci
+            fugit, vero hic incidunt accusamus esse molestiae molestias expedita nemo beatae officiis, inventore culpa!
+            Nam, libero a?</p>
+    </div>
+    
+    <!-- 
+        input pattern attribute helps us to control information
+
+        RegEx  =>  Regular Expressions
+            controls the input by specific symbols
+                Whenever we use inputs and want to control 
+                what our clients write there, we use RegEx
+                that lets us to allow or NOT allow what to write
+
+        .main::-webkit-scrollbar {
+            background: linear-gradient(to bottom,
+                        black, green, black);
+        }
+        .main::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, 
+                            yellow, red, yellow);
+            border-radius: 20px;
+        }
+
+        --------------------------------------------------
+        ROOT - CONTAINERS
+
+            For using one place as a root-place for all style
+        values, we use :root and inside root we identify our values 
+        inside of containers. Container is created by --... and 
+        is called by css-function var(..., ...)
+
+        :root {
+            --success_color: black;
+            --my_text_size: 10px;
+            ...
+        }
+        .main1 { background-color: var(--success_color, #333);
+        }
+        .main2 { --success_color: green;
+            background-color: var(--success_color, #333);
+        }
+
+        /*
+        mask-image: url(pics/mask.png);
+        -webkit-mask-image: url(pics/mask.png);
+
+        */
+        mask-image: linear-gradient(to bottom,black, rgb(0,0,0, 0.1));
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: cover;
+
+        -webkit-mask-image: linear-gradient(to bottom, black, rgb(0,0,0, 0.1));
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: cover;
+    -->
+</body>
+<style>
+    :root {
+        --success_color: black;
+        --warning_color: orange;
+        --my_text_size: 10px;
+    }
+    * { transition: 1s; }
+    .main {
+        width:50%;
+        height: 50vh;
+        margin: 5px auto;
+        text-align: center;
+        overflow: auto;
+        color: red;
+        background: url(../../pics/1.jpg) no-repeat;
+        background-size: cover;
+        background-size: center;
+        background-color: rgb(0,0,0,0.5);
+        background-blend-mode: darken;
+        padding: 50px;
+
+        mask-image: linear-gradient(to bottom, black, rgb(0,0,0, 0.5));
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: cover;
+
+        -webkit-mask-image: linear-gradient(to bottom, black, rgb(0,0,0, 0.5));
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: cover;
+    }
+
+    .main:hover {
+        mask-image: url(../../pics/mask.png);
+        -webkit-mask-image: url(../../pics/mask.png);
+    }
+   
+
+</style>
+
+</html>

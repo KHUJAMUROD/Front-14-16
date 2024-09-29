@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-left">
+            <a href="#">
+                <img src="/Logo/4.jpg" width="30" height="20">
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+    }
+
+    .main>div {
+        display: flex;
+    }
+
+    a {
+        padding: 10px 20px;
+        color: snow;
+    }
+
+    a:hover:not(.nav-left a) {
+        background-color: black;
+    }
+
+    @media (max-width: 500px) {
+        .main {
+            display: block;
+        }
+
+        .main>div {
+            display: block;
+            width: 100%;
+        }
+
+        .main a {
+            display: block;
+            width: 100%;
+        }
+    }
+</style>
+
+</html>

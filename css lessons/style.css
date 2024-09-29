@@ -1,0 +1,59 @@
+   /* * {
+        background-color: black;
+        color: white;
+    }
+
+    body{
+        background-color: green;
+    } */
+
+    /* p{
+        background-color: gray;
+    }
+
+    p{
+        background-color: green;
+    } */
+
+
+    /* main .block section p {
+        color: red;
+    } */
+
+       /* button,
+    a,
+    p,
+    span{
+        color: red;
+    } */
+
+
+
+    /* main .block > p {
+        color: red;
+    } */
+
+    /* main .block  p {
+        color: red;
+    } */
+
+
+    /* main + p{
+        color: red;
+    } */
+
+    main ~ p{
+        color: red;
+    }
+
+    /* p {
+        color: blue;
+    }
+
+    #p {
+        color: green;
+    }
+
+    .p {
+        color: yellow;
+    } */

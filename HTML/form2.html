@@ -1,0 +1,143 @@
+<!-- 
+    doctype => самая главная настройка HTML файла
+    html => самая главный тег который берет всё внутрь себя 
+    head => голова (отвечает за разные настройки)
+    meta => настройка
+    body => тела (весь код который мы будем писать будет находиться всегда внутри)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Document</title>
+ </head>
+ 
+ <body>
+     <div class="img">
+         <img  src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" width="200" height="50">
+         <h1>Create a new accaount</h1>
+         <p>It's quick and easy</p>
+     </div>
+     <form action="https://www.instagram.com">
+         <table class="tb1">
+             <tr>
+                 <td style="text-align: right;">
+                     <b>First name</b> <br>
+                     <input type="text" minlength="5" placeholder="Имя" required>
+                 </td>
+                 <td>
+                     <b>Last name</b> <br>
+                     <input type="text" minlength="5" placeholder="Фамипия" required>
+                 </td>
+             </tr>
+             <tr>
+                 <td style="text-align: right;">
+                     <label for="number"><b>New Password</b></label><br>
+                     <input id="numer" value="+998" type="text">
+                 </td>
+                 <td>
+                     <label for="pass"><b>New Password</b></label><br>
+                     <input id="pass" type="text" placeholder="Пароль">
+                 </td>
+             </tr>
+         </table>
+ 
+         <br>
+         <div style="text-align: center;">
+             <label for="date"><b>Birthday</b></label><br>
+             <input id="date" type="date" required>
+         </div>
+ 
+         <br>
+         <div>
+             <table class="tb2">
+                 <tr>
+                     <td style="color:greenyellow">
+                         <label><b>Gender</b></label>
+                         <fieldset style="background-color: greenyellow">
+                             <button>
+                                 <b>Female <input type="radio" name="gender"></b>
+                             </button>
+                             <button>
+                                 <b>Male <input type="radio" name="gender"></b>
+                             </button>
+                             <button>
+                                 <b>Other <input type="radio" name="gender" checked disabled></b>
+                             </button>
+                         </fieldset>
+                     </td>
+                     <td style="color: aquamarine;">
+                         <label><b>Your favourite web site</b></label>
+                         <fieldset style="background-color: aquamarine">
+                             <button>
+                                 <b>Instagram<input type="radio" name="gender"></b>
+                             </button>
+                             <button>
+                                 <b>Facebook<input type="radio" name="gender"></b>
+                             </button>
+                             <button>
+                                 <b>Twitter<input type="radio" name="gender"></b>
+                             </button>
+                         </fieldset>
+                     </td>
+                     <td>
+                         <label><b>Your hobby</b></label>
+                         <fieldset style="background-color: dodgerblue">
+                             <button>
+                                 <b>Soccer<input type="radio" name="gender"></b>
+                             </button>
+                             <button>
+                                 <b>Voleyball<input type="radio" name="gender"></b>
+                             </button>
+                             <button>
+                                 <b>Tennis<input type="radio" name="gender"></b>
+                             </button>
+                         </fieldset>
+                     </td>
+                 </tr>
+             </table>
+         </div>
+         <div class="footer">
+             <small>
+                 People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn
+                     more.</a>
+                 <br>
+                 By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive
+                 SMS Notifications from us and can opt out any time.
+             </small>
+             <br>
+     
+     
+             <button type="submit">
+                 Sign up
+             </button>
+             <br>
+             <a href="#">
+                 Already have an account?
+             </a>
+         </div>
+     </form>
+ </body>
+ <style>
+ 
+     .img{
+         text-align: center;
+     }    
+ 
+     .tb1{
+         width: 100%;
+     }
+ 
+     .tb2{
+         width: 100%;
+     }
+ 
+     .footer{
+         text-align: center;
+     }
+ </style>
+ </html>

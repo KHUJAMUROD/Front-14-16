@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="middle"> Company Logo</div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+    </div>
+</body>
+<style>
+    * {
+        transition: 0.5s linear;
+    }
+
+    .main {
+        padding: 200px;
+        width: 50%;
+        background-color: black;
+        margin: 100px auto;
+        position: relative;
+    }
+
+    .main .middle {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle,
+                rgb(0, 0, 255, 0.2) 30%,
+                greenyellow,
+                red,
+                magenta);
+        margin: 10px auto;
+        border-radius: 50%;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: snow;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .main .middle:hover {
+        cursor: pointer;
+        transform: rotate(360deg) scale(2, 2);
+        box-shadow: 3px 3px 30px red,
+            6px 6px 30px blue,
+            -6px -6px 30px red,
+            -3px -3px 30px blue;
+    }
+
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: radial-gradient(circle, red, green, blue);
+        position: absolute;
+    }
+
+    .first {
+        left: 0;
+        top: 0;
+    }
+
+    .second {
+        left: 0;
+        bottom: 0;
+    }
+
+    .third {
+        right: 0;
+        top: 0;
+    }
+
+    .fourth {
+        right: 0;
+        bottom: 0;
+    }
+
+    .main:hover .first,
+    .main:hover .second {
+        background: radial-gradient(circle, rgb(255, 0, 0, 0.5), green, blue);
+        box-shadow: 10px 10px 30px 10px yellow, -10px -10px 30px 10px yellow;
+        transform: scale(4, 4) rotateY(-360deg) translateX(50px);
+    }
+
+    .main:hover .third,
+    .main:hover .fourth {
+        transform: scale(4, 4) rotateY(360deg) translateX(-50px);
+        background: radial-gradient(circle, rgb(255, 0, 0, 0.5), green, blue);
+        box-shadow: 10px 10px 30px 10px yellowgreen, -10px -10px 30px 10px yellowgreen;
+    }
+</style>
+
+</html>

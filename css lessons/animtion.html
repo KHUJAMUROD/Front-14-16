@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="block"></div>
+
+</body>
+
+<style>
+    *,
+    ::before,
+    ::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    body {
+        background-color: #222;
+        position: relative;
+    }
+
+    .block {
+        animation-name: test;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        /* transition: all 1s ease 0s; */
+        width: 100px;
+        height: 100px;
+        background-color: #eee;
+        margin: 20px;
+        border-radius: 50%;
+        position: absolute;
+        /* animation-name: test; */
+        /* animation-direction: alternate; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-direction: alternate; */
+        /* animation-timing-function: cubic-bezier(0, 1.41, 1, -0.62); */
+        /* animation-timing-function: steps(10); */
+        /* animation-timing-function: linear; */
+        /* animation-delay: 3s; */
+        /* animation-delay: calc(-1.2s); */
+        /* animation-delay: -1s; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards; */
+        /* animation-fill-mode: none; */
+        animation: test 2s linear infinite alternate 1s forwards;
+    }
+
+    .block:hover {
+        /* animation-play-state: running; */
+        /* animation: none; */
+        /* animation-play-state: paused; */
+    }
+
+    @keyframes test {
+        0% {
+            border-radius: 0;
+            left: 0;
+        }
+
+        50% {
+            border-radius: 50%;
+        }
+
+        100% {
+            border-radius: 0;
+            left: 600px;
+        }
+    }
+</style>
+
+</html>

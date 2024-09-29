@@ -1,0 +1,41 @@
+
+body{
+    background-color: black;
+    color: snow;
+}
+
+
+h1 {
+    color: red;
+}
+
+.heading2{
+    color: blue;
+    background-color: lightgray;
+}
+
+#heading2{
+    color: yellow;
+    background-color: lightblue;
+}
+
+h1{
+    color: blue;
+}
+
+/* .heading4 {
+    color: green;
+}
+
+#h1 {
+    color: dodgerblue;
+} */
+
+
+/* .heading2 {
+    color: silver;
+}
+
+#heading2 {
+    color: gold;
+} */

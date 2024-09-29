@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- /*
+        display: flex;  =>  makes every item inside the container as inline-item
+                            even if it works as block-item
+        flex-direction: 
+                        row (default) => in one line (from left to right)
+                        row reverse  =>  reverses the row (from right to left)
+                        column  =>  a column (from top to bottom)
+                        column-reverse  =>  a column (from bottom to top)
+
+        justify-content:  => horizontally  (works from left to right) 
+                        space-between  => separates the place that is left evenly 
+                                        but does not put it at the beginning and 
+                                        at the end 
+                        space-evenly  => separates the place equally and evenly
+                        space-around  => at the beginning and at the end the place
+                                        will be devided into 2 and at other places 
+                                        evenly
+                        center  =>  centers all elements inside the parent
+
+        align-content: => vertically  (works from top to bottom) 
+                        space-between  => separates the place that is left evenly 
+                                        but does not put it at the beginning and 
+                                        at the end 
+                        space-evenly  => separates the place equally and evenly
+                        space-around  => at the beginning and at the end the place
+                                        will be devided into 2 and at other places 
+                                        evenly
+                        center  =>  centers all elements inside the parent
+
+        align-items:  => vertically  (works from to to bottom)
+                center  =>  centers all elements inside the parent 
+                flex-start => beginning (top)
+                flex-end  => the end (bottom)
+
+        flex-wrap  =>
+                    no-wrap (default)
+                    wrap  =>  cancells wrapping in the flexbox
+                              which allows to use default bahavior of our 
+                              browser
+
+        flex-flow: direction wrap;
+    */
+    /*
+        @media (max-width || min-width  : ...) {
+            selector {
+                ....
+            }
+            ...
+        }
+        max-width => the ending point of width
+        min-width => the starting point of width
+    */
+     -->
+</head>
+
+<body>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+<style>
+    /* 
+        justify-...  => horizontal
+        align-...    => vertical
+    */
+    .main {
+        width: 80%;
+        margin: 0 auto;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+
+        background-color: darkblue;
+    }
+
+    .main div {
+        background-color: #f1f1f1;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 500px) {
+        .main {
+            background-color: green;
+        }
+
+        .main>div {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .main {
+            background-color: indigo;
+        }
+    }
+
+    @media (min-width: 750px) {
+        .main {
+            background-color: yellow;
+        }
+    }
+</style>
+
+</html>

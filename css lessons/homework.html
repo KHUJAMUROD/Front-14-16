@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>
+                <img class="img1" src="/Cars/1.jpg" alt="" width="100" height="100">
+            </th>
+            <th>
+                <img class="img2" src="/Cars/1.jpg" alt="" width="100" height="100">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <img class="img3" src="/Cars/1.jpg" alt="" width="100" height="100">
+            </th>
+            <th>
+                <img class="img4" src="/Cars/1.jpg" alt="" width="100" height="100">
+            </th>
+        </tr>
+    </table>
+
+</body>
+
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    body{
+    }
+
+    table{
+        width: 100%;
+        height: 100vh;
+    }
+
+    th{
+        background-color: gray;
+    }
+
+    table:hover .img1{
+        margin: 0 80% 25% 0;
+    }
+    table:hover .img2{
+        margin: 0 0 25% 80%;
+    }
+    table:hover .img3{
+        margin: 26% 80% 0 0;
+    }
+    table:hover .img4{
+        margin: 26% 0 0 80%;
+    }
+
+    .img1{
+        margin: 26% 0 0 80%;
+    }
+
+    .img2{
+        margin: 26% 80% 0 0 ;
+    }
+
+    .img3{
+        margin: 0 0 25% 80%;
+    }
+    .img4{
+        margin: 0 80% 25% 0;
+    }
+
+    table:hover,
+    table:hover th{
+        background-color: black;
+    }
+</style>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="flex__container">
+            <div class="flex__items item-1">
+                <div class="flex__content content-1">HEADER</div>
+            </div>
+            <div class="flex__items item-2">
+                <div class="flex__content content-2">CONTENT</div>
+            </div>
+            <div class="flex__items item-3">
+                <div class="flex__content content-3">FOOTER</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+    *,
+    ::before,
+    ::after {
+        padding: 0;
+        margin: 0;
+        transition: 1s;
+        box-sizing: border-box;
+        /* text-align: center; */
+    }
+
+    main {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+
+    body {
+        background-color: #222;
+        color: snow;
+    }
+
+    .flex__container {
+        min-height: 100vh;
+        border: 3px solid white;
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* justify-content: stretch; */
+        /* justify-content: start; */
+        /* justify-content: end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* display: inline-flex; */
+        /* align-items: stretch; */
+        /* align-items: start; */
+        /* align-items: end; */
+        /* align-items: baseline; */
+        /* align-items: center; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+    }
+
+    .flex__items {
+        /* flex-basis: auto; */
+        /* flex-basis: 300px; */
+        /* flex-basis: 33.333%;     */
+        border: 3px solid green;
+    }
+
+    .flex__content {
+        background-color: rgb(51, 44, 112);
+        padding: 10px;
+    }
+
+    .item-1 {
+        /* align-self: start; */
+        /* order: 3; */
+    }
+
+    .item-3 {
+        /* align-self: end; */
+        /* order: 1; */
+    }
+
+    .item-2 {
+        /* align-self: center; */
+        /* flex-basis: 400px; */
+        /* order: 2; */
+        /* flex-grow: 0; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 1; */
+        /* flex-shrink: 0; */
+        flex: 1 0 auto;
+    }
+
+    .content-2 {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .content-3,
+    .content-1 {
+        /* padding: 20px;
+        font-size: 35px; */
+    }
+</style>
+
+
+</html>

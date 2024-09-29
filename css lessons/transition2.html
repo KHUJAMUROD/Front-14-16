@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="example"></div>
+    </main>
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        /* transition-duration: 3s; */
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .example {
+        border: 5px solid red;
+        width: 400px;
+        height: 300px;
+        background-color: slateblue;    
+        transition-property: background-color, border-radius, transform;
+        /* transition-delay: 2s; */
+    }
+
+    .example:hover {
+        background-color: black;
+        transform: scale(1.5);
+        /* transform: rotateX(180deg); */
+        /* transform: rotateY(180deg); */
+        transform: rotate(360deg);
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.5); */
+        border-radius: 50%;
+    }
+</style>
+
+</html>

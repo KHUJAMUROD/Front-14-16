@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/jkdf.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Lorem, ipsum ?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo, consectetur corporis nobis
+            consequuntur rem numquam iusto vero maxime inventore.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo, consectetur corporis nobis
+            consequuntur rem numquam iusto vero maxime inventore.</p>
+    </div>
+    <div class="img">
+        <img src="./Document 4_files/youtube-logo-png-free-download-30.png" alt="">
+    </div>
+    <div class="main-2">
+        <h1>Lorem, ipsum dolor.</h1>
+        <br>
+        <p class="p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquam.</p>
+        <div>
+            <div class="div2">
+                <p>90%</p>
+            </div>
+        </div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquam.</p>
+        <div>
+            <div class="div3">
+                <p>85%</p>
+            </div>
+        </div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquam.</p>
+        <div>
+            <div class="div4">
+                <p>80%</p>
+            </div>
+        </div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquam.</p>
+        <div>
+            <div class="div5">
+                <p>75%</p>
+            </div>
+        </div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquam.</p>
+        <div>
+            <div class="div6">
+                <p>100%</p>
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <img src="./Document 4_files/kosti-256x192.png" alt="">
+    </div>
+    <div class="main-3">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga perferendis architecto incidunt iste
+            consequatur recusandae rerum. Alias corrupti natus vero qui, sapiente saepe quos temporibus mollitia
+            deserunt, dolorem et voluptatibus.</p>
+    </div>
+    <div class="main-4">
+        <h1>the end</h1>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: 0;
+            text-align: center;
+        }
+
+        body {
+            background: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(255, 250, 250, 0.527);
+            height: 200vh;
+        }
+
+        .main {
+            background-color: snow;
+            padding: 30px;
+        }
+
+        .img {
+            margin: 10px 0 20px 0;
+        }
+
+        .img img {
+            width: 20%;
+            height: 20vh;
+        }
+
+        .img:hover {
+            animation-name: e1;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes e1 {
+            10% {
+                transform: translate(5px, 5px);
+            }
+
+            30% {
+                transform: translate(-5px, -5px);
+            }
+
+            40% {
+                transform: translate(5px, 5px);
+            }
+
+            50% {
+                transform: translate(-5px, -5px);
+            }
+
+            70% {
+                transform: translate(-5px, -5px);
+            }
+
+            80% {
+                transform: translate(5px, 5px);
+            }
+
+            100% {
+                transform: translate(-5px, -5px);
+            }
+        }
+
+        .main-2 {
+            width: 100%;
+            height: auto;
+            background-color: rgb(4, 4, 29);
+            color: snow;
+            padding: 10px;
+        }
+
+        .main-2>div {
+            padding: 0%;
+            margin: 0 0 40px 0;
+            height: 30px;
+            width: 100%;
+            background-color: snow;
+            overflow: hidden;
+        }
+
+        .main-2 div>.div2 {
+            width: 90%;
+            height: 100vh;
+            background-color: grey;
+        }
+
+        .div2>p {
+    </style>
+</body>
+
+</html>

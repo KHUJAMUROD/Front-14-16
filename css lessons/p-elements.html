@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Commodi odio excepturi, repudiandae praesentium tempora 
+         provident numquam eaque explicabo quos, voluptatibus quam
+          in ipsam, sed itaque officia facilis perspiciatis? Excepturi, obcaecati.
+    </p>
+
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+
+
+</body>
+
+<style>
+    * {
+        transition: 1s;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+
+    /* ul li::marker {
+        color: aqua;
+    } */
+
+
+
+    p::first-letter {
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+    }
+
+    p::first-line {
+        background-color: #555;
+        color: snow;
+    }
+
+    p::selection {
+        background-color: black;
+        color: blue;
+    }
+
+    ul li::before {
+        content: '😊';
+        display: inline-block;
+        /* width: 10px; */
+        /* height: 10px; */
+        /* border-radius: 50px; */
+        /* background-color: red; */
+        position: relative;
+        left: -10px;
+        /* bottom: 2px; */
+        /* box-shadow: 0 0 10px 5px black; */
+    }
+    ul li::after {
+        content: '😊';
+        display: inline-block;
+        /* width: 10px; */
+        /* height: 10px; */
+        /* border-radius: 50px; */
+        /* background-color: red; */
+        position: relative;
+        left: 10px;
+        /* bottom: 2px; */
+        /* box-shadow: 0 0 10px 5px black; */
+    }
+</style>
+
+</html>

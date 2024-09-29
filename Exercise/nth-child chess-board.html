@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+
+    
+</body>
+<style>
+    table {
+        border: inset 10px green;
+        width: 50%;
+        margin: 0 auto;
+    }
+    td {
+        width: 50px;
+        height: 50px;
+        background-color: lightgray;
+    }
+    tr:nth-child(odd) td:nth-child(even) {
+        background-color: black;
+    }
+    tr:nth-child(even) td:nth-child(odd) {
+        background-color: black;
+    }
+    
+    /*
+        list-style-type: ...; 
+        https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+
+        --------------------------------------------
+        TO GET EVERY n-th ELEMENT we use n-th child selector
+        RU: Для получения каждого n-го элемента 
+            мы используем селектор n-го ребёнка
+
+        selector:nth-child(...) {...}
+                even  => 2, 4, 6, 8, 10, ... (чётные)
+                odd   => 1, 3, 5, 7, 9, ...   (нечётные)
+                ..3n  => 3, 6, 9, 12, 15, ... (кратные 3)
+                ...
+        --------------------------------------------
+        TO GET UNIQUE ELEMENTS we use first-child and last-child selectors
+        RU: Для получения уникальных элементов 
+            мы используем селекторы первого и последнего ребёнка
+
+        selector:first-child    => первый элемент
+        selector:last-child      => последний элемент
+        selector:nth-child(number) => элемент с номером number
+        --------------------------------------------
+        TO EXCLUDE ELEMENTS we use not(...) selector    
+        RU: Для исключения элементов 
+            мы используем селектор not(...)    
+        selctor:not(...) {...}
+    */
+</style>
+</html> 
+

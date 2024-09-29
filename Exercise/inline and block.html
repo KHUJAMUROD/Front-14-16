@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+</head>
+<body>
+    <!-- Align / Display / Inline-block -->
+    <div class="main">
+        <div class="div1">
+            <img src="/Cars/1.jpg" width="100" height="100">
+            <img src="/Cars/1.jpg" width="100" height="100">
+            <img src="/Cars/1.jpg" width="100" height="100">
+        </div>
+
+        <div class="div2">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+        </div>
+    </div>
+</body>
+<style>
+
+    body{
+        background-color: black;
+    }
+
+    * {
+        text-align: center;
+        transition: 0.5s;
+    }
+    .main {
+        padding: 10px;
+        margin: 0 auto;
+        width: 50%;
+        background: url(/Cars/1.jpg) no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.488);
+        border-radius: 20px;
+    }
+    img:nth-child(2) {
+        visibility: hidden;
+    }
+    .div2 img {
+        display: block;
+    }
+    img:last-child {
+        opacity: 0.5;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px 5px green, -5px -5px 15px 5px green;
+    }
+
+
+    .main:hover img:nth-child(2){
+        visibility: visible;
+    }
+    
+    img:nth-child(2):hover{
+        border-radius: 50%;
+        border: 5px double red;
+        width: 150px;
+        height: 150px;
+    }
+    /*
+        visibility: ...
+            hidden
+            visible
+        display: ...
+            none
+            block
+            inline
+            inlin-block
+        opacity: ...
+            0 => 0%
+            1 => 100%
+            0.5 => 50%
+    */
+    
+
+
+</style>
+</html>

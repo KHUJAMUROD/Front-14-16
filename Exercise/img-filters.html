@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <img class="img-1" src="/Cars/1.jpg" width="100%" height="120">
+        <img class="img-2" src="/Cars/1.jpg" width="100%" height="120">
+        <img class="img-3" src="/Cars/1.jpg" width="100%" height="120">
+        <img class="img-4" src="/Cars/1.jpg" width="100%" height="120">
+    </div>
+
+</body>
+<style>
+    * {
+        transition: 0.3s ease-in;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .main {
+        width: 60%;
+        background-color: gray;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding: 5px;
+    }
+
+    img { filter: grayscale(100%); }
+    img { 
+        filter: grayscale(0); 
+    }
+    .img-1 {
+        border-top: ridge 15px green;
+        border-left: double 10px green;
+        border-right: groove 5px green;
+        border-radius:  0 50px 0 50px;
+    }
+    .img-2 {
+        border-top: ridge 15px red;
+        border-right: dotted 10px red;
+        border-left: ridge 5px red;
+        border-radius:  50px 0 50px 0;
+    }
+    .img-3 {
+        border-left: dashed 10px yellow;
+        border-radius:  50px 0 50px 0 ;
+        border-bottom: ridge 15px yellow;
+        border-right: ridge 5px yellow;
+    }
+    .img-4 {
+        border-right: double 10px blue;
+        border-radius: 0 50px 0 50px;
+        border-bottom: ridge 15px blue;
+        border-left: groove 5px blue;
+    }
+
+</style>
+
+</html>

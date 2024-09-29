@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <img src="/2.jpg" alt="">
+        <p class="p1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem optio sunt nam animi quos. Ab
+            consequuntur reprehenderit perferendis asperiores impedit vel quae. Dicta eveniet tempore culpa eaque
+            pariatur recusandae!
+        </p>
+
+        <div class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veritatis ipsam, corrupti recusandae,
+            eligendi
+            architecto, nihil quos deserunt harum doloremque facere eius atque. Nesciunt dolor, hic minus doloremque
+            possimus itaque.
+        </div>
+    </main>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+
+    body {
+        background-color: black;
+        color: snow;
+    }
+
+    main {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid red;
+    }
+
+    img {
+        width: 100%;
+        height: 0;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    main:hover img {
+        width: 100%;
+        height: 200px;
+        box-shadow: 0 0 20px 10px aqua;
+    }
+
+    main:hover .p2 {
+        width: 100%;
+        box-shadow: 0 0 20px 10px blue,
+            0 0 20px 20px red;
+        border-radius: 50%;
+        padding: 100px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    main:hover {
+        height: 350px;
+        box-shadow: 0 0 20px 10px blue,
+            0 0 20px 20px red;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+</style>
+
+
+</html>

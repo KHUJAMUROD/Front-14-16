@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <!-- Тег <form> устанавливает форму на веб-странице. Форма предназначена для обмена данными между пользователем и сервером. Область применения форм не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ к любому элементу формы, изменять его и применять по своему усмотрению. 
+        
+    Элемент <fieldset> (от англ. form field set — набор полей формы) предназначен для группирования элементов формы. Такая группировка облегчает работу с формами, содержащими большое число данных, например, один блок может быть предназначен для ввода текстовой информации, а другой — для флажков.
+
+    Тег <legend> применяется для создания заголовка группы элементов формы, которая определяется с помощью тега <fieldset>. Группа элементов обозначается в браузере с помощью рамки, а текст, который располагается внутри контейнера <legend>, встраивается в эту рамку.   
+
+    Тег <input> определяет поле ввода, в которое пользователь может вводить данные. <input> элементы используются в элементе <input> для объявления элементов управления вводом, которые позволяют пользователям вводить данные. Поле ввода может меняться различными способами в зависимости от атрибута Type.    
+
+
+    Тег <label> устанавливает связь между определенной меткой, в качестве которой обычно выступает текст, и элементом формы (<input>, <select>, <textarea>). Такая связь необходима, чтобы изменять значения элементов формы при нажатии курсором мыши на текст.
+
+
+    Тег <textarea> (от англ. text area — область текста) это элемент формы для создания области, в которую можно вводить несколько строк текста. Количество символов, которое можно ввести в поле не ограничено, а введенный текст отображается моноширинным шрифтом.   
+
+    
+    -->
+
+    <!-- <details>
+      <summary></summary>
+    </details> -->
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <fieldset style="background-color: black; color: blue; text-align: center;">
+      <legend>input family</legend>
+      <b>Nissan</b> <input name="car" type="radio">
+      <b>Mazda</b> <input name="car" type="radio">
+      <b>Lamborghini</b> <input name="car" type="radio">
+    </fieldset>
+
+    <h1>Registration form</h1>
+    <table>
+      <tr>
+        <td>
+          <label for="name">Username</label>
+        </td>
+        <td>
+          <input id="name" type="text" value="Sunnat" placeholder="Your name" required list="names" maxlength="10"
+            minlength="3" />
+          <datalist id="names">
+            <option value="Fariz"></option>
+            <option value="Bobur"></option>
+            <option value="Izzat"></option>
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="password" >Password</label>
+        </td>
+        <td>
+          <input id="password"   type="password" required maxlength="6" minlength="2" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="email">Email</label>
+        </td>
+        <td>
+          <input id="email" type="email" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="date">Date of birth</label>
+        </td>
+
+        <td>
+          <input id="date" type="date" min="2000-01-29" max="2020-12-31" />
+        </td>
+      </tr>
+
+      <tr>
+        <th colspan="2">
+          <!-- <button type="submit">Submit</button> -->
+          <!-- <button type="reset">Reset</button> -->
+          <input type="submit" value="submit">
+          <input type="reset" value="reset">
+        </th>
+      </tr>
+    </table>
+
+    <select name="" id="">
+      <option value="">text1</option>
+      <option value="">text2</option>
+      <option value="">text3</option>
+    </select>
+  </form>
+
+</body>
+
+</html>

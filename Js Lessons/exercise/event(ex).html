@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1-2-3</title>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="showMessageButton">Показать сообщение</button>
+
+
+    <div id="colorBox"></div>
+
+
+
+    <p id="text">Нажми на кнопку, чтобы изменить этот текст.</p>
+    <button id="changeTextButton">Изменить текст</button>
+
+    <script>
+
+            const button1 = document.getElementById('showMessageButton');
+            button1.addEventListener('click', function () {
+                alert('Привет, мир!');
+            });
+
+            const colorBox = document.getElementById('colorBox');
+            colorBox.addEventListener('mouseover',  () => {
+                colorBox.style.backgroundColor = 'lightcoral';
+            });
+            colorBox.addEventListener('mouseout', function () {
+                colorBox.style.backgroundColor = 'lightblue';
+            });
+
+
+            const button2 = document.getElementById('changeTextButton');
+            const text = document.getElementById('text');
+
+            button2.addEventListener('click', function () {
+                text.textContent = 'Текст был изменен!';
+            });
+
+    </script>
+</body>
+
+</html>

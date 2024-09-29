@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    
+    <div class="block">
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+    </div>
+
+</body>
+
+<style>
+
+    *,::before,::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 0.5s linear;
+    }
+
+    body{
+        background-color: #333;
+    }
+    
+    .block{
+        border-radius: 20px;
+        box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.8);
+        width: 40%;
+        margin: 50px auto;
+        padding: 20px 70px;
+        background-color: rgba(53, 28, 110, 0.689);
+        color: rgb(255, 250, 250);
+        line-height: 50px;
+    }
+
+    ul{
+        list-style-type: kannada;
+    }
+
+    li{
+        position: relative;
+    }
+
+    li::before{
+        content: '🎃';
+        position: absolute;
+        left: 50px;
+        opacity: 0;
+    }
+
+    li:hover::before{
+        content: '😎';
+        position: absolute;
+        left: -50px;
+        opacity: 1;
+    }
+    li:hover{
+        list-style-type: none;
+    }
+</style>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <p>
+            Lorem ipsum dolor sit amet <span>consectetur adipisicing</span>
+            elit. Iste natus repellat libero voluptas corrupti. Fugit officia
+            animi ipsum unde distinctio quasi quaerat dolor magni, fugiat non
+            corrupti totam nulla enim. Sunt distinctio nisi aliquid ut doloribus
+            dicta incidunt odio, cupiditate <span>maxime magni</span> excepturi, tempore fugiat
+            recusandae explicabo fuga quae molestias!
+        </p>
+        <div class="first">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+        </div>
+        <div class="second">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+        </div>
+        <div class="third">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+            <img src="/home/7.jpg" width="100" height="100">
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        transition: 1s;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    .main {
+        background-color: #333;
+        width: 80%;
+        margin: 0 auto;
+        color: snow;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .main:hover {
+        background: url(/home/7.jpg);
+        background-color: rgb(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;
+
+        padding: 50px;
+    }
+
+    .main:hover span {
+        border: solid 5px green;
+        display: inline-block;
+        background-color: #444;
+    }
+
+    img:hover {
+        opacity: 50%;
+        border: 10px double green;
+    }
+
+
+    span:hover {
+        font-size: 1.1em;
+        border-radius: 20px;
+        color: magenta;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px;
+        background: url(/Cars/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.466);
+    }
+
+    /* span:first-child:hover {
+        background: linear-gradient(45deg, green, yellow, red);
+    }
+    span:last-child:hover {
+        background: radial-gradient(circle, green, yellow, red);
+    } */
+
+    .second img {
+        visibility: hidden;
+    }
+
+    .third img:nth-child(2) {
+        visibility: hidden;
+    }
+</style>
+
+</html>

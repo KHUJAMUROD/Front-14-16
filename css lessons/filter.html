@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <main>
+        <div class="img">
+            <img src="/Cars/13.jpg" alt="" width="50%" height="50%">
+            <div class="block"></div>
+        </div>
+    </main> -->
+
+
+    <div class="container">
+        <img class="img1" src="/Cars/1.jpg" alt="" width="200" height="150">
+        <img class="img2" src="/Cars/3.jpg" alt="" width="200" height="150"><br>
+        <img class="img3" src="/Cars/5.jpg" alt="" width="200" height="150">
+        <img class="img4" src="/Cars/6.jpg" alt="" width="200" height="150">
+    </div>
+
+</body>
+
+<style>
+    * {
+        transition: 1s;
+    }
+
+    body {
+        background-color: #333;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+
+    img {
+        filter: grayscale(100%);
+    }
+
+    .container:hover .img1{
+        border-radius: 0 50% 0 50%;
+        border-top: 10px ridge red;
+        border-left: 10px double red;
+        border-right: 5px groove red;
+        filter: grayscale(0);
+    }
+
+    .container:hover .img2{
+        border-radius: 50% 0 50% 0;
+        border-top: 10px groove yellow;
+        border-left: 5px groove yellow;
+        border-right: 10px double yellow;
+        filter: grayscale(0);
+    }
+
+    .container:hover .img3{
+        border-radius: 50% 0 50% 0;
+        border-bottom: 10px groove green;
+        border-right: 5px groove green;
+        border-left: 10px double green;
+        filter: grayscale(0);
+    }
+
+    .container:hover .img4{
+        border-radius: 0 50% 0 50%;
+        border-bottom: 10px ridge dodgerblue;
+        border-right: 10px double dodgerblue;
+        border-left: 5px groove dodgerblue;
+        filter: grayscale(0);
+    }
+
+    /* main {
+        min-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    .img{
+        background-color: rgb(3, 58, 3);
+        display: flex;
+        justify-content: center;
+        background: url(/Cars/1.jpg) center / cover no-repeat;    
+        align-items: center;
+        width: 500px;
+        height: 350px;
+        
+    }
+
+    .block{
+        background: url(/Cars/1.jpg) center / cover no-repeat;    
+        width: 50%;
+        height: 50%;
+        background-color: rgba(255, 250, 250, 0.042);
+        backdrop-filter: blur(3px);
+    } */
+
+    img {
+        /* filter: blur(2px); */
+        /* filter: brightness(100%); */
+        /* filter: contrast(100%); */
+        /* filter: drop-shadow(0 0  50px  white); */
+        /* filter: grayscale(100%); */
+        /* filter: hue-rotate(360deg); */
+        /* filter: saturate(0%); */
+        /* filter: invert(0%); */
+        /* filter: sepia(0%); */
+        /* filter: opacity(50%); */
+    }
+</style>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="upper-div">
+        <ul>
+            <li style="float:left;">
+                <a href="#">
+                    <img src="/PNGs/drf.png" width="50" height="50">
+                </a>
+            </li>
+            <li>
+                <a href="#first">Profile</a>
+            </li>
+            <li>
+                <a href="#second">Site</a>
+            </li>
+            <li>
+                <a href="#third">About</a>
+            </li>
+        </ul>
+        <div>
+            <h1>We Are One!</h1>
+            <p>
+                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum saepe distinctio, consequatur quae ullam!</em>
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="div-1">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+        </div>
+        <div class="div-2">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+        </div>
+        <div class="div-3">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+            <img src="/Cars/1.jpg" width="100%" height="100">
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+<style>
+    * { padding:0;  margin:0;  box-sizing:border-box;  
+        transition:0.5s;   text-align: center; color: snow;}
+
+    body {
+        background-color: #555;
+    }
+    .main {
+        padding: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .main > div { 
+        display:grid; 
+        gap: 5px;
+    }
+    .main .div-1 {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .main .div-2 {
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+    .main .div-3 {
+        grid-template-columns: 1fr 2fr 3fr;
+    }
+    img { border-radius: 20px; }
+    img:hover {
+        opacity: 90%;
+        border: groove 10px aquamarine;
+    }
+
+    .upper-div {
+        background: url(/home/1.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+
+        background-color: rgb(0, 0, 0, 0.6);
+        background-blend-mode: darken;
+        border-radius: 0 0 200px 200px;
+    }
+
+    ul {
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    li {
+        float: right;
+        padding: 10px 20px;
+    }
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: snow;
+    }
+
+    li:hover:not(li:first-child) {
+        border-bottom: #eee solid 2px;
+    }
+
+    li:active:not(li:first-child) {
+        background-color: darkred;
+        border-radius: 50%;
+    }
+
+</style>
+</html>

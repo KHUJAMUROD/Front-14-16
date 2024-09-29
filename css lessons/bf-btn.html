@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button>
+        Click
+    </button>
+
+</body>
+
+<style>
+
+    *,::before,::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+        text-align: center;
+    }
+    body{
+        background-color: #333;
+    }
+
+    button{
+        position: relative;
+        color: red;
+        border-radius: 10px;
+        padding: 10px 15px;
+        background-color: rgba(0, 128, 0, 0.468);
+        display: inline-block;
+        border: none;
+        outline: none;
+        margin: 20px auto;
+    }
+
+    button::before{
+        content: '';
+        background: url(/Cars/1.jpg) center / cover no-repeat;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.488);
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 0;
+        left: 0;
+        bottom: 50%;
+    }
+
+    button:hover::before{
+        border-radius: inherit;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    button:hover{
+        box-shadow: 70px 0 0 0 rgba(0, 0, 255, 0.596) inset,
+        0 50px 0 0 rgba(0, 255, 0, 0.47) inset,
+        0 0 20px 5px yellow,
+        0 0 20px 10px blue;
+        color: snow;
+    }
+
+</style>
+</html>

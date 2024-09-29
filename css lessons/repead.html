@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="/2.jpg" alt="">
+    <div class="block"></div>
+    <br>
+    <section class="block">
+        <img src="/2.jpg" alt="">
+    </section>
+</body>
+ 
+<style>
+
+img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+.block{
+    position: relative;
+    display: none;
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.block img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+@media(min-width: 720px){
+    body{
+        background-color: black;
+    }
+    .block{
+        display: block  ;
+    }
+
+}
+
+</style>
+
+</html>

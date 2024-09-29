@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <main>
+        <div class="left">
+            <div class="top">
+                <h3>Mithila</h3>
+                <img src="girl.jpg" alt="" width="200" height="200">
+                <div class="list">
+                    <div class="ul-1">
+                        <ul>
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                        </ul>
+                    </div>
+                    <div class="ul-2">
+                        <ul>
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                            <li>text</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <h2>^^</h2>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rem magni maiores harum dolore, molestiae magnam unde voluptatum voluptatem, 
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <h3>Bio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt adipisci ipsam eius nobis corporis neque aliquid qui eligendi repudiandae dolorum.</p>
+            </div>
+            <div>
+                <h3>Lorem, ipsum.</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Lorem, ipsum.</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                    <li>Lorem ipsum dolor sit amet consectetur </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+        padding-top: 30px;
+    }
+
+    main{
+        width: 800px;
+        background-color:green;
+        margin: 0 auto;
+        display: grid;
+        grid-template: 1fr / 1fr 2fr;
+        border-radius: 20px;
+        padding: 20px;
+        gap: 20px;
+    }   
+
+  
+    main>div{
+        border-radius: 20px;
+    }
+
+
+    .left{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 375px 175px;
+        gap: 20px;
+    }   
+
+    .left .top{
+        text-align: center;
+        background-color: #eee;
+        border-radius: 20px;
+    }
+    .left .bottom{
+        padding: 5px;
+        background-color: #eee;
+        border-radius: 20px;
+    }
+    .left .bottom p{
+        font-size: 20px;
+    }
+
+    img{
+        margin: 20px 0;
+        border-radius: 50%;
+    }
+    h3{
+        margin-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .list{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+    }
+  
+    .left ul{
+        list-style-type: none;
+    }
+
+    .right{
+        display: grid;
+        grid-template: 120px 200px 200px / 1fr;
+        gap: 20px;
+    }
+
+    .right>div{
+        background-color: #eee;
+        border-radius: 20px;
+        padding: 10px 30px;
+    }
+
+    .right ul li{
+        margin: 15px 0;
+    }
+</style>
+</html>

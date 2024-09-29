@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>This is an exam</h1>
+  </div>
+  <div class="nav-bar">
+    <a href="#">Cite</a>
+    <a href="#">Profile</a>
+    <a href="#">About</a>
+    <a style="float: right" href="#">Logo</a>
+  </div>
+  <div class="content">
+    <div class="column">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quaerat
+      qui ea, beatae in deleniti ipsam placeat, eaque, dolores ipsa porro
+      dicta. Natus, enim temporibus voluptates commodi dicta nisi repellendus.
+    </div>
+    <div class="inner-content">
+      <img src="/home/7.jpg" width="30%" height="100" />
+      <img src="/home/7.jpg" width="30%" height="100" />
+      <img src="/home/7.jpg" width="30%" height="100" />
+    </div>
+    <div class="column">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+      expedita eaque. Voluptatibus labore adipisci beatae minus quis ea error!
+      Quis facere odio asperiores provident aut libero magni saepe sit
+      consectetur.
+    </div>
+  </div>
+  <div class="footer">
+    <p>
+      <marquee direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit
+        omnis amet minus libero temporibus, exercitationem voluptas nihil
+        molestias at?</marquee>
+      <marquee direction="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugit
+        omnis amet minus libero temporibus, exercitationem voluptas nihil
+        molestias at?</marquee>
+    </p>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" style="float: right">Link</a>
+  </div>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-bar {
+    background-color: #555;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-bar a {
+    float: left;
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: #333;
+    color: snow;
+    border-right: 1px solid snow;
+  }
+
+  a:hover {
+    background-color: rgba(0, 128, 0, 0.599);
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .content div {
+    padding: 10px;
+  }
+
+  .inner-content img {
+    float: left;
+    margin-left: 15px;
+    box-shadow: 0 0 10px 5px slateblue;
+    border-radius: 10px;
+  }
+
+  .footer {
+    background: url(/home/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 50, 0.5);
+    background-blend-mode: darken;
+    overflow: hidden;
+    color: snow;
+    height: 200px;
+    padding: 50px;
+  }
+
+  .footer a {
+    color: snow;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: underline red double;
+  }
+
+  .column {
+    background-color: darkolivegreen;
+    color: aquamarine;
+    font-family: "Franklin Gothic Medium";
+  }
+
+  img {
+    margin-top: 20px;
+  }
+</style>
+
+</html>

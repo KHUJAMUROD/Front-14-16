@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="contener">
+      <div class="cube">
+         <div class="sede right">right</div>
+         <div class="sede left">left</div>
+         <div class="sede back">back</div>
+         <div class="sede front">front</div>
+         <div class="sede botton">botton</div>
+         <div class="sede top">top</div>
+      </div>
+  </div>
+</body>
+<style>
+   * {
+      box-sizing: border-box; 
+   }
+   .contener {
+        position: relative;
+        margin: 200px auto;
+        width: 300px;
+        height: 300px; 
+        perspective: 500px;
+   }
+    .cube {
+        width: inherit;
+        height: inherit;
+        transform-style: preserve-3d;
+      
+        animation-name: emx1;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite; 
+    }
+    @keyframes emx1 {
+      0% {
+         transform: rotateX(-30deg) rotateY(0%);
+      }
+      100% {
+         transform: rotateX(-30deg) rotateY(360deg);
+      }
+   }
+   body {
+      background-color: black;
+   }
+   .sede {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border: 5px black solid;
+      color: snow;
+      background-color: red;
+      text-align: center;
+      line-height: 300px;
+   }
+   .front {
+      transform: translateZ(150px);
+   }
+
+   .back {
+      transform: rotateY(180deg) translateZ(150px);
+   }
+
+   .right {
+      transform: rotateY(90deg) translateZ(150px);
+   }
+
+   .left {
+      transform: rotateY(-90deg) translateZ(150px) ;
+   }
+
+   .top {
+      transform: rotateX(-90deg) translateZ(150px);
+   }
+   
+   .botton {
+      transform: rotateX(90deg) translateZ(150px);
+      }
+
+      .top::before {
+      content:"";
+      width: inherit; height: inherit;
+      background-color: red;
+      display: block;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      filter: blur(30px);
+      box-shadow: 5px 5px 20px snow, -5px -5px 20px snow;
+   }
+</style>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <p>
+            Company Logo
+        </p>
+    </div>
+</body>
+<style>
+    /*
+        calc() -  lets you perform calculations when specifying CSS values.
+                  RU: позволяет выполнять вычисления при указании значений CSS.
+
+        transform:  -  lets you rotate, scale, translate, skew.
+                  RU: позволяет поворачивать, масштабировать, перемещать, сдвигать элементы.
+
+            rotate(...deg) -  lets you rotate an element around a fixed point on the 2D plane, without deforming it.
+                        RU: позволяет поворачивать элемент вокруг фиксированной точки на 2D плоскости, не искажая его.
+                rotateX() -  lets you rotate an element around the X axis.
+                rotateY() -  lets you rotate an element around the Y axis.
+                rotate3D() - lets you rotate an element around a fixed point on the 3D plane, without deforming it.
+            
+            skew(...deg) -  lets you skew an element along the X and Y axes.
+                      RU: позволяет сдвигать элемент вдоль осей X и Y.
+                skewX() -  lets you skew an element along the X axis.
+                skewY() -  lets you skew an element along the Y axis.
+
+            scale(..., ...) - lets you change the size of an element.
+                      RU: позволяет изменить размер элемента.
+                scaleX() - lets you change the width of an element.
+                scaleY() - lets you change the height of an element.
+
+            translate(..., ...) - lets you move an element from its current position.
+                      RU: позволяет переместить элемент от его текущей позиции.
+                translateX() - lets you move an element along the X axis.
+                translateY() - lets you move an element along the Y axis.
+
+
+        x - The x-axis is defined as the horizontal axis of a plane, with the positive x-axis 
+            extending to the right.
+            RU: ось x определяется горизонтальной осью плоскости, с положительной осью x,
+                расширяющейся вправо.
+        y - The y-axis is defined as the vertical axis of a plane, with the positive y-axis extending upwards.
+            RU: ось y определяется вертикальной осью плоскости, с положительной осью y, 
+               расширяющейся вверх.
+
+        transform-origin - sets the starting position of the transform
+                           RU: Указывает где трансформация начинается
+                           
+                values:  ..., ...
+                        left, right
+                        top, bottom
+                ex:   transform-origin: left top; ...
+    */
+    * {
+        transition: 0.5s linear;
+    }
+
+    .main {
+        padding: 50px;
+        width: 50%;
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    .main p {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle,
+                rgb(0, 0, 255, 0.2) 30%,
+                greenyellow,
+                red,
+                magenta);
+        margin: 10px auto;
+        border-radius: 50%;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: snow;
+        font-family: Impact;
+    }
+
+    .main p:hover {
+        cursor: pointer;
+        transform: rotate(360deg);
+        box-shadow: 3px 3px 30px red,
+            6px 6px 30px blue,
+            -6px -6px 30px red,
+            -3px -3px 30px blue;
+    }
+</style>
+
+</html>

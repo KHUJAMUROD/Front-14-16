@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        checked => checks the input (checkbox or radio) as a default    => is used for creating any kind of forms for registration or login
+        label   => the label or name of the input field
+                   we connect the label and the input with attributes
+                        for="..." and id="..."
+
+        ATTRIBUTES
+            required => required filed (does not allow without filling into the field)
+        to know what we should write into the field 
+         a default field
+            disabled => disables the field (does not allow to edit or update)
+            maxlength => maximum characters that are allowed to write into the field 
+            minlength => minimum characters that are allowed to write into the field 
+            min => used with input types such as range or date to identify the minimum date or range
+            max => used with input types such as range or date to identify the maximum date or range
+
+            datalist => is used to help the user fill the form by choosing any option 
+                        from options that are given
+                            we use list="..." attribute in the input and same id="..." 
+                            for datalist for connecting them together
+    -->
+
+    <table>
+        <tr>
+            <th style="background-color:gray; color:snow;">
+                <table>
+                    <tr>
+                        <th>
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="200" height="50" />
+                            <h1>Create a new account</h1>
+                            <p>It’s quick and easy.</p>
+                            <hr />
+                            <form action="https://www.instagram.com">
+                                <div>
+                                    <b>First name</b>
+                                    <input placeholder="First name" minlength="5" type="text" required />
+            
+                                    <b>Last name</b>
+                                    <input  placeholder="Last name" type="text" minlength="5" required />
+                                </div>
+            
+                                <br />
+                                <div>
+                                    <label for="number"><b>Mobile number or email</b></label>
+                                    <input placeholder="Mobile number or email" id="number" type="text" />
+                                    <label for="pass"><b>New Password</b></label>
+                                    <input  placeholder="Password" id="pass" type="password" />
+                                </div>
+            
+                                <br />
+                                <div>
+                                    <label for="date"><b>Birthday</b></label>
+                                    <input id="date" type="date" required />
+                                </div>
+            
+                                <br />
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label><b>Gender</b></label>
+                                                <fieldset style="background-color: lightgray">
+                                                    <button>
+                                                        <b>Female</b> <input type="radio" name="gender" />
+                                                    </button>
+                                                    <button>
+                                                        <b>Male</b> <input type="radio" name="gender" />
+                                                    </button>
+                                                    <button>
+                                                        <b>Other</b>
+                                                        <input type="radio" name="gender" checked disabled />
+                                                    </button>
+                                                </fieldset>
+                                            </td>
+            
+                                            <td>
+                                                <label><b>Your favourite Web-Site</b></label>
+                                                <fieldset>
+                                                    <button>
+                                                        Instagram: <input type="radio" name="site" checked />
+                                                    </button>
+                                                    <button>
+                                                        Facebook: <input type="radio" name="site" />
+                                                    </button>
+                                                    <button>
+                                                        Twitter: <input type="radio" name="site" />
+                                                    </button>
+                                                </fieldset>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+            
+                                <small>
+                                    People who use our service may have uploaded your contact
+                                    information to Facebook.
+                                    <a href="#">Learn more.</a>
+                                    <br />
+                                    By clicking Sign Up, you agree to our Terms, Privacy Policy and
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat placeat, ipsum inventore repellat saepe, omnis sed, recusandae quam consequatur delectus temporibus voluptates neque? Enim dignissimos soluta a eos deserunt veritatis?
+                                </small>
+                                <br />
+            
+                                <button  style="background-color: green; color:snow;" type="submit">
+                                    <h3>Sign up</h3>
+                                </button>
+                                <br />
+                                <a style="background-color: green; color:snow;" href="#">
+                                    <h3>Already have an account?</h3> 
+                                </a>
+                            </form>
+                        </th>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+   
+</body>
+
+</html>

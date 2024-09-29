@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="#2">
+        Link
+    </a>
+    <br>
+    <br>
+    <input type="text"><br><br>
+    <input class="checkbox" type="checkbox">
+</body>
+
+<style>
+    * {
+        transition: 1s;
+    }
+
+
+
+    a:visited {
+        color: magenta;
+    }
+
+    /* 
+    Примечание: a:hover ДОЛЖНО стоять после a:linkи a:visitedв 
+    определении CSS, чтобы быть эффективным! a:activeДОЛЖНО стоять 
+    после a:hoverв определении CSS, чтобы быть эффективным!
+    Имена псевдоклассов не чувствительны к регистру.
+     */
+
+    a:hover {
+        color: green;
+        font-size: 35px;
+        text-decoration: none;
+    }
+    a:active {
+        color: red;
+    }
+
+    /* input:hover {
+        box-shadow: 0 0 10px 10px gray;
+    } */
+
+    input:focus {
+        box-shadow: 0 0 10px 10px red;
+    }
+
+    .checkbox:checked {
+        box-shadow: 0 0 10px 10px green;
+    }
+</style>
+
+</html>

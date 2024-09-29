@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="left">
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In animi veritatis illo tempora voluptatum saepe
+                ab. Commodi, nostrum quia! Voluptas dolorem sapiente, commodi voluptate saepe consequatur pariatur
+                quisquam beatae veritatis eius consequuntur reiciendis quas perferendis voluptatem numquam excepturi
+                voluptates provident necessitatibus amet delectus odio autem. Rerum minima non culpa odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In animi veritatis illo tempora voluptatum saepe
+                ab. Commodi, nostrum quia! Voluptas dolorem sapiente, commodi voluptate saepe consequatur pariatur
+                quisquam beatae veritatis eius consequuntur reiciendis quas perferendis voluptatem numquam excepturi
+                voluptates provident necessitatibus amet delectus odio autem. Rerum minima non culpa odio!</p>
+            <img src="/2.jpg" alt="" width="100%" height="200">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, dicta maiores necessitatibus alias
+                officiis numquam ratione fugiat eligendi dignissimos harum sequi maxime atque, accusantium odio?
+                Provident necessitatibus repellendus iusto rerum ratione. Exercitationem maxime iure vel consectetur
+                sint odio distinctio corporis voluptatem atque? Est, voluptatum esse fugiat assumenda veniam totam
+                nihil?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, dicta maiores necessitatibus alias
+                officiis numquam ratione fugiat eligendi dignissimos harum sequi maxime atque, accusantium odio?
+                Provident necessitatibus repellendus iusto rerum ratione. Exercitationem maxime iure vel consectetur
+                sint odio distinctio corporis voluptatem atque? Est, voluptatum esse fugiat assumenda veniam totam
+                nihil?</p>
+        </div>
+    </main>
+
+</body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transition: 1s;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    body {
+        background-color: #000;
+        color: snow;
+    }
+
+    main {
+        margin: 0 auto;
+        padding: 10px;
+        width: 50%;
+        height: 250px;
+        overflow: auto;
+        color: snow;
+        background-color: gray;
+    }
+
+
+    .left {
+        overflow: hidden;
+        width: 0;
+        float: left;
+    }
+
+    .right {
+        overflow: hidden;
+        float: left;
+        width: 100%;
+    }
+
+    main:hover {
+        box-shadow: 0 0 30px 10px blue,
+            0 0 30px 20px red;
+    }
+
+    main:hover .right {
+        float: left;
+        width: 65%;
+    }
+
+    main:hover .left {
+        float: left;
+        width: 30%;
+        text-align: center;
+    }
+
+    .left ul li {
+        line-height: 70px;
+        font-size: 20px;
+    }
+
+    a {
+        color: snow;
+    }
+
+    a:hover {
+        padding: 20px;
+        box-shadow: inset 0 0 10px 10px darkcyan;
+        border-radius: 20px;
+        color: red;
+    }
+
+    main::-webkit-scrollbar {
+        width: 30px;
+        box-shadow: inset 0 0 10px 10px rgba(255, 0, 0, 0.469);
+    }
+
+    main::-webkit-scrollbar-thumb {
+        width: 100%;
+        box-shadow: inset 0 0 10px 3px rgb(2, 255, 2);
+        border-radius: 10px;
+    }
+</style>
+
+</html>

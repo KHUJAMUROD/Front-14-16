@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div-1">
+            <div class="div-2"></div>
+        </div>
+        <div class="div-3">
+            <div class="div-4"></div>
+        </div>
+        <div class="div-5">
+            <div class="div-6"></div>
+            <div class="div-7"></div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .main {
+        border: 1px solid red;
+        margin: 0 auto;
+        width: 700px;
+        height: 400px;
+        background-color: gray;
+        position: relative;
+    }
+
+    .div-1 {
+        width: 40px;
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        background-color: rgb(0, 0, 255, 0.8);
+    }
+
+    .div-2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 0;
+    }
+
+    .div-3 {
+        width: 40px;
+        height: 50%;
+        background-color: black;
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }
+
+    .div-4 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: greenyellow;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .div-5 {
+        width: 50%;
+        height: 40px;
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+    }
+
+    .div-6 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: magenta;
+        position: absolute;
+        right: 40%;
+    }
+    .div-7 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: cyan;
+        position: absolute;
+        left: 35%;
+    }
+
+
+    .main:hover .div-2,
+    .main:hover .div-4,
+    .main:hover .div-6,
+    .main:hover .div-7 {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .main:hover .div-1,
+    .main:hover .div-3 {
+        width: 50px;
+    }
+
+    .main:hover .div-5 {
+        height: 50px;
+    }
+
+    
+    .main:hover .div-2 { background: radial-gradient(circle, red, greenyellow); }
+    .main:hover .div-4 { background: radial-gradient(circle, blue, red); }
+    .main:hover .div-6 { background: radial-gradient(circle, magenta, green); }
+    .main:hover .div-7 { background: radial-gradient(circle, cyan, green); }
+   
+
+    .main:hover .div-2 {
+        background-color: yellow;
+        position: absolute;
+        top: 150px;
+    }
+    .main:hover .div-6 {
+        background-color: yellow;
+        position: absolute;
+    }
+   
+    .main:hover .div-4 {
+        margin-bottom: 150px;
+        background-color: red;
+    }
+
+
+
+    .main:hover {
+        background-color: #333;
+    }
+
+    .main:hover .div-6 {
+        background-color: orange;
+        right: 90%;
+    }
+    .main:hover .div-7 {
+        background-color: blue;
+        left: 90%;
+    }
+
+    .main:hover>div {
+        border-radius: 30px;
+    }
+</style>
+
+</html
