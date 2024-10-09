@@ -1,11 +1,11 @@
 'use strict'
 
 
-// function showFirstMessage() {
-//     console.log('Hello world');
-// }
+function showFirstMessage() {
+    console.log('Hello world');
+}
 
-// showFirstMessage();
+showFirstMessage();
 //-----------------------------------
 
 

@@ -1,9 +1,10 @@
-// 'use strict'
+'use strict'
 
 // const user = {
 //     name: 'Alex',
 //     // 4: 'Alex',
 //     // {}: 'Alex',
+//     // []: 'Alex',
 //     surName: 'Smith',
 //     birthday: '20/04/1993',
 //     showMyPublicData: function () {
@@ -11,10 +12,17 @@
 //     },
 // };
 
+// const userMap = new Map(Object.entries(user));
 
-// // console.log(Object.entries(user));
 
-// // console.log(typeof(Object.keys(user)[0]));
+
+// const newUserObj = Object.fromEntries(userMap);
+
+// // console.log(userMap);
+// console.log(newUserObj);
+// // // console.log(Object.entries(user));
+
+// // // console.log(typeof(Object.keys(user)[0]));
 
 // const shops = [
 //     { rice: 500 },
@@ -25,17 +33,19 @@
 //     // ['key3'],
 // ];
 
-// const map = new Map();
-// // const map = new Map(
-// //     [
-// //         [{ paper: 400 }, 8000]
-// //     ]
-// // );
+
+
+// // const map = new Map();
+// const map = new Map(
+//     [
+//         [{ paper: 400 }, 8000],
+// //         [{ rice: 400 }, 5000],
+//     ]
+// );
 // // map.set(shops[0], 5000);
 // // map.set(shops[1], 10000);
 // // map.set(shops[2], 15000);
 
-// // console.log(map);
 
 // const budget = [5000, 10000, 15000];
 
@@ -43,49 +53,53 @@
 //     map.set(shop, budget[i])
 // })
 
+
+// console.log(map);
+// console.log(map.size);
+
 // // console.log(map.entries());
 
 // // console.log(map.get(shops[0]));
 // // console.log(map.keys());
-// // console.log(map.delete(shops[0]));
+// map.delete(shops[0]);
+// console.log(map);
+
 // // console.log(map.clear());
 // // console.log(map.has(shops[0]));
-// // console.log(map.size);
 // // map.keys()
 // // console.log(map.keys());
 // // console.log(Array.isArray(map.keys()));
 // // console.log(map.keys());
 
-// // for (let shop of map.keys()){
-// //     // console.log(Array.isArray(shop));
-// //     console.log(shop);
-// // }
+// for (let shop of map.keys()){
+//     // console.log(shop);
+//     // console.log(Array.isArray(shop));
+// }
 
 // const goods = [];
 
-// // for (let shop of map.keys()){
-// //     // goods.push(Object.keys(shop))
-// //     goods.push(Object.keys(shop)[0])
-// // }
+// for (let price of map.values()){
+//     // goods.push(Object.keys(shop))
+//     // goods.push(Object.keys(shop)[0])
+//     goods.push(price)
+// }
 
-// // console.log(goods);
-
-// // for (let price of map.values()){
-// //     console.log(price);
-// // }
-
-// // for (let price of map.entries()){
-// //     console.log(price);
-// // }
-
-// // for (let [shop, price] of map.entries()){
-// //     console.log(shop, price);
-// // }
+// console.log(goods);
 
 
-// // map.forEach((value, key, map) => {
-// //     console.log(key, value)
-// // })
+
+// for (let price of map.entries()){
+//     console.log(price);
+// }
+
+// for (let [shop, price] of map.entries()){
+//     console.log(price, shop);
+// }
+
+
+// map.forEach((value, key, map) => {
+//     console.log(key, value)
+// })
 
 
 // // const userMap = new Map(Object.entries(user))
@@ -102,14 +116,49 @@
 // const arr = [1, 1, 2, 2, 3, 4, 24, 35, 7, 7]
 // const arr2 = ['alex', 'ann', 'mark', 'alex', 'ann']
 
+
+// arr2.forEach((key, value, arr) => {
+//     console.log(key, value, arr);
+// })
+
+// function unique(arr) {
+//     return Array.from (new Set(arr));
+// }
+
+
+
+// console.log(unique(arr2));
+
+
 // const set = new Set(arr)
 // const set2 = new Set(arr2)
 
-// // console.log(set);
-// // console.log(set2);
+// console.log(set);
+// console.log(set2);
 
 // set2.add('john').add('mark')
 // set2.add('melissa')
+
+// set2.add('ivan')
+// .add('oleg');    
+
+// set2.delete(value);
+// set2.has(value);
+// set2.clear();
+// set2.size();
+
+
+// for (let value of set2) console.log(value);
+
+// set2.forEach((value,valueAgain,set2) => {
+// console.log(value,valueAgain);
+
+// })
+
+// console.log(set2.values());
+
+// console.log(set2.keys());
+// console.log(set2.entries());
 
 
 // // console.log(set2);
@@ -136,97 +185,100 @@
 // // console.log(unique(arr2));
 
 
-// // BigInt
+// BigInt
 
-// // console.log(Math.pow(2, 53));
-// // console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Math.pow(2, 53));
+// console.log(Number.MAX_SAFE_INTEGER);  
 
-// // const bigInt = 12314324123471247128748912749134123n;
+const bigInt = 12314324123471247128748912749134123n;
 
-// // const anotherBigInt = BigInt(1242328390482304812903481849012834284234908) 
+const anotherBigInt = BigInt(1242328390482304812903481849012834284234908) 
 
-
-
-// // // console.log(typeof(bigInt));
-// // // console.log(typeof(anotherBigInt));
-
-// // // console.log(5n + 1); // error 
-// // // console.log(Math.round(5n)); // error
-
-// // // console.log(1n + 2n);
-
-// // // console.log(5n / 2n); //без дробной части
-// // // console.log(2n > 1n); 
-// // // console.log(2n > 1); 
-// // // console.log(2n > 5); 
-// // // console.log(2n == 2); 
-// // // console.log(2n === 2); 
-
-// // let bigInt2 = 1n;
-// // let number = 2;
-
-// // // console.log(bigInt2 + number); // error
-// // // console.log(bigInt2 + BigInt(number));
-
-// // // console.log(Number(bigInt2) + number);
-// // // console.log(+bigInt2 + number); // error
-
-// // // console.log(Number(1247889132474123472389471834718974911n));
-// // // console.log(Number(anotherBigInt));
+// console.log(2n > 1);
 
 
 
 
+// // console.log(typeof(bigInt));
+// console.log(typeof(anotherBigInt));
 
-// // function amountOfPages(summary){
-// //     let result = '';
-// //     let n = 0;
+// console.log(5n + 1); // error 
+// console.log(Math.round(5n)); // error
 
-// //     for (let i = 1; i <= summary; i++) {
-// //       result += i;
-// //       if (result.length === summary) {
-// //         n = i;
-// //         break;
-// //       }
-// //     }
+// console.log(1n + 2n);
 
-// //     return n;
-// // }
+// console.log(5n / 2n); //без дробной части 
+// console.log(2n > 1n); 
+// console.log(2n > 1); 
+// console.log(2n > 5); 
+// console.log(2n == 2); 
+// console.log(2n === 2); 
 
-// // // console.log(amountOfPages(100));
+let bigInt2 = 1n;
+let number = 2;
 
+// console.log(bigInt2 + number); // error
+// console.log(bigInt2 + BigInt(number));
 
-// // // function amountOfPages(summary) {
-// // //     let totalLength = 0;
-// // //     let pages = 0;
+// console.log(Number(bigInt2) + number);
+console.log(+bigInt2 + number); // error
 
-// // //     while (totalLength < summary) {
-// // //         pages++;
-// // //         totalLength += pages.toString().length;
-// // //     }
-
-// // //     return pages;
-// // // }
-
-// // // console.log(amountOfPages(100));
+// console.log(Number(1247889132474123472389471834718974911n));
+// console.log(Number(anotherBigInt));
 
 
-// // function amountOfPages(summary){
-// //     let result = '';
-// //     let n = 0;
 
-// //     for (let i = 1; ; i++) {
-// //         result += i;
-// //         if (result.length >= summary) {
-// //             n = i;
-// //             break;
-// //         }
-// //     }
 
-// //     return n;
-// // }
 
-// // console.log(amountOfPages(100));
+// function amountOfPages(summary){
+//     let result = '';
+//     let n = 0;
+
+//     for (let i = 1; i <= summary; i++) {
+//       result += i;
+//       if (result.length === summary) {
+//         n = i;
+//         break;
+//       }
+//     }
+
+//     return n;
+// }
+
+// console.log(amountOfPages(100));
+
+
+// function amountOfPages(summary) {
+//     let totalLength = 0;
+//     let pages = 0;
+
+//     while (totalLength < summary) {
+//         pages++;
+//         totalLength += pages.toString().length;
+//     }
+
+//     return pages;
+// }
+
+// console.log(amountOfPages(100));
+
+
+// function amountOfPages(summary){
+//     let result = '';
+//     let n = 0;
+
+//     for (let i = 1; ; i++) {
+//         result += i;
+//         if (result.length >= summary) {
+//             n = i;
+//             break;
+//         }
+//     }
+
+//     return n;
+// }
+
+// console.log(amountOfPages(100));
 
 
 

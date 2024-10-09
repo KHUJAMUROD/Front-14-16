@@ -232,47 +232,47 @@ const user = {
 // }
 
 
-// console.dir(Symbol);
+console.dir(Symbol);
 
-// const salaries = {
-//     john: 500,
-//     mark: 1000,
-//     ann: 5000,
-//     sayHello: function () {
-//         console.log('Hello');
-//     }
-// }
+const salaries = {
+    john: 500,
+    mark: 1000,
+    ann: 5000,
+    sayHello: function () {
+        console.log('Hello');
+    }
+}
 
-// salaries[Symbol.iterator] = function () {
-//     return {
-//         current: this.john,
-//         last: this.ann,
-//         next() {
-//             if (this.current < this.last) {
-//                 this.current = this.current + 500;
-//                 return { done: false, value: this.current }
-//             } else {
-//                 return { done: true ,}
-//             }
-//         }
-//     }
-// }
+salaries[Symbol.iterator] = function () {
+    return {
+        current: this.john,
+        last: this.ann,
+        next() {
+            if (this.current < this.last) {
+                this.current = this.current + 500;
+                return { done: false, value: this.current }
+            } else {
+                return { done: true ,}
+            }
+        }
+    }
+}
 
-// for (let res of salaries) {
-//     console.log(res);
-// }
+for (let res of salaries) {
+    console.log(res);
+}
 
-// const iterator = salaries[Symbol.iterator]();
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
+const iterator = salaries[Symbol.iterator]();
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
 
 
 
