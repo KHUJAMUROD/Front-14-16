@@ -1,50 +1,43 @@
+'use strict';
+
 // function func() {
 //     window.smth = "string";
-
 // }
-
 
 // const someRes = getData();
 // const node = document.querySelector('.class');
 
-// setInterval(function () {
-
+// setInterval(function() {
 //     if (node) {
 //         node.innerHTML = someRes;
 //     }
-// }, 1000);
-
-
+// },  1000);
 
 // function outer() {
-//     const potentialyHugeArray = [];
+//     const potentionallyHugeArray = [];
 //     return function inner() {
-//         potentialyHugeArray.push('Hello');
-//         console.log('Hello');
-
+//         console.log('Hello!!');
+        
 //     }
 // }
 
+
 // const sayHello = outer();
 
+    
+// function createElement() {
+//     const div = document.createElement('div');
+//     div.id = 'test';
+//     document.body.append(testDiv);
+// }               
 
-
-function
-    createElement() {
-    const div = document.createElement('div');
-    div.id = 'test';
-    return div;
-    document.body.append(testDiv);
-
-
-}
-
-createElement();
+// const testDiv = createElement(); 
 
 
 
-function deleteElement() {
-    document.body.removeChild(document.getElementById('test'));
+// function deleteElement() {
+//     document.body.removeChild(document.getElementById('test'));
+// }
 
-}
-deleteElement();
+// deleteElement();
+
