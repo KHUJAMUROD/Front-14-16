@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
             });
         }
-    });
+    })
 
     ///Timer
 
@@ -164,14 +164,17 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Timer
 
-    const deadline = '2025-06-11';
 
-    function getTimeRemaining(endtime) {
-        const t = Date.parse(endtime) - Date.parse(new Date()),
-            days = Math.floor((t / (1000 * 60 * 60 * 24))),
-            seconds = Math.floor((t / 1000) % 60),
+    const dedline = '2025-05-11';
+
+    function getTimeremaining(endtime) {
+
+        const t = new Date.parse(endtime) - Date.parse(new Date()),
+            days = Math.floor(t / (1000 * 60 * 60 * 24)),
+            hours = Math.floor((t / (1000 * 60 * 60) % 24)),
             minutes = Math.floor((t / 1000 / 60) % 60),
-            hours = Math.floor((t / (1000 * 60 * 60) % 24));
+            seconds = Math.floor((t / 1000) % 60);
+
 
         return {
             'total': t,
@@ -180,42 +183,53 @@ window.addEventListener('DOMContentLoaded', function () {
             'minutes': minutes,
             'seconds': seconds
         };
+
     }
 
     function getZero(num) {
         if (num >= 0 && num < 10) {
-            return '0' + num;
+            return `0${num}`;
         } else {
             return num;
         }
     }
 
-    function setClock(selector, endtime) {
 
-        const timer = document.querySelector(selector),
-            days = timer.querySelector("#days"),
+    function setClock(selector, endtime) {
+        const timer = document.querySelector(selector);
+        days = timer.querySelector("#days"),
             hours = timer.querySelector('#hours'),
             minutes = timer.querySelector('#minutes'),
             seconds = timer.querySelector('#seconds'),
             timeInterval = setInterval(updateClock, 1000);
 
+
         updateClock();
 
+
         function updateClock() {
-            const t = getTimeRemaining(endtime);
+            const t = getTimeremaining(endtime);
 
-            days.innerHTML = getZero(t.days);
-            hours.innerHTML = getZero(t.hours);
-            minutes.innerHTML = getZero(t.minutes);
-            seconds.innerHTML = getZero(t.seconds);
+            function updateClock() {
+                const t = getTimeremaining(endtime);
 
-            if (t.total <= 0) {
-                clearInterval(timeInterval);
+                days.innerHTML = getZero(t.days);
+                hours.innerHTML = getZero(t.hours);
+                minutes.innerHTML = getZero(t.minutes);
+                seconds.innerHTML = getZero(t.seconds);
+
+                if (t.total <= 0) {
+                    clearInterval(timeInterval);
+                }
             }
         }
-    }
+        setClock('.timer', dedline);
+    };
 
-    setClock('.timer', deadline);
+
+
+
+
 
     // Modal
     const modalTrigger = document.querySelectorAll('[data-modal]'),
@@ -223,17 +237,20 @@ window.addEventListener('DOMContentLoaded', function () {
         modalCloseBtn = document.querySelector('[data-close]');
 
     modalTrigger.forEach(btn => {
-        btn.addEventListener('click', function () {
-            modal.classList.add('show');
-            modal.classList.remove('hide');
-            document.body.style.overflow = 'hidden';
-        });
+        btn.addEventListener('click', openModal);
     });
 
     function closeModal() {
         modal.classList.add('hide');
         modal.classList.remove('show');
         document.body.style.overflow = '';
+    }
+
+    function openModal() {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        document.body.style.overflow = 'hidden';
+        clearInterval(modalTimerId);
     }
 
     modalCloseBtn.addEventListener('click', closeModal);
@@ -249,4 +266,14 @@ window.addEventListener('DOMContentLoaded', function () {
             closeModal();
         }
     });
+
+    const modalTimerId = setTimeout(openModal, 3000);
+
+    function showModalByScroll() {
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+            openModal();
+            window.removeEventListener('scroll', showModalByScroll);
+        }
+    }
+    window.addEventListener('scroll', showModalByScroll);
 });
