@@ -47,3 +47,4 @@ console.log(baxa);
 console.log(alex);
 
 
+//https://learn.javascript.ru/constructor-new

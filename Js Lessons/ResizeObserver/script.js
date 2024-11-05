@@ -13,3 +13,5 @@ childList: true
 
 
 observer.disconnect();
+
+// https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver
