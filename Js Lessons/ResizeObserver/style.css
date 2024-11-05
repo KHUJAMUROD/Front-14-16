@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 300px;
+    height: 250px;
+    margin: 40px auto;
+    padding: 50px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 20px;
+}
