@@ -1,34 +1,37 @@
 'use strict';
 
-class Rectangle {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
+// class Rectangle {
 
-    calcArea() {
-        return this.height * this.width;
-    }
 
-}
 
-class ColoredRectangleWithText extends Rectangle {
-    constructor(height, width, text, bgColor) {
-        super(height, width);
-        this.text = text;
-        this.bgColor = bgColor;
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
 
-    }
+//     calcArea() {
+//         return this.height * this.width;
+//     }
 
-    showMyProps() {
-        console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+// }
 
-    }
-}
+// class ColoredRectangleWithText extends Rectangle {
+//     constructor(height, width, text, bgColor) {
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
 
-const div = new ColoredRectangleWithText(25, 10, 'Hello world', 'red');
-div.showMyProps();
-console.log(div.calcArea());
+//     }
+
+//     showMyProps() {
+//         console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+
+//     }
+// }
+
+// const div = new ColoredRectangleWithText(25, 10, 'Hello world', 'red');
+// div.showMyProps();
+// console.log(div.calcArea());
 
 
 // const square = new Rectangle(10, 10);
@@ -64,3 +67,44 @@ console.log(div.calcArea());
 
 // static
 // При работе с конструкторами в ES5 многие привыкли использовать функции, как объекты (они же и есть объекты) и вешать на них служебные функции:
+
+
+
+
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width = width;
+//     }
+
+
+//     calcArea() {
+//         return this.height * this.width;
+//     }
+// }
+
+// class ColoredRectangleWithText extends Rectangle { 
+//     constructor(height, width, text, bgColor) {
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+
+//     showMyProps() {
+//         console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+//     }
+// }
+
+// const div = new ColoredRectangleWithText(25, 10, 'Hello world', 'red');
+
+// div.showMyProps();
+// console.log(div.calcArea());
+
+
+
+
+// const square = new Rectangle(10, 6);
+// const long = new Rectangle(20, 100);
+
+// console.log(square.calcArea());
+// console.log(long.calcArea());
